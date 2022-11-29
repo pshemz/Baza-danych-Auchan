@@ -16,15 +16,15 @@ CREATE TABLE DZIALKA (
 CREATE TABLE LOKALIZACJA (
     ID_lokalizacji int NOT NULL IDENTITY(1, 1) PRIMARY KEY,
     odleglosc_od_centrum int NOT NULL,
-    sklep_w_miescie bool NULL,
-    strefa_ekonomiczna bool NOT NULL
+    sklep_w_miescie bit NULL,
+    strefa_ekonomiczna bit NOT NULL
 );
 
 CREATE TABLE PARKING (
     ID_parkingu int NOT NULL IDENTITY(1, 1) PRIMARY KEY,
     ilosc_miejsc int NOT NULL,
     ilosc_miejsc_inwalidzi int NOT NULL,
-    parking_bezplatny bool NULL,
+    parking_bezplatny bit NULL,
     firma_parkingowa varchar(16) NOT NULL
 );
 
@@ -32,5 +32,5 @@ CREATE TABLE DOSTAWCZAKI (
     ID_dostawczaka int NOT NULL IDENTITY(1, 1) PRIMARY KEY,
     marka varchar(16) NOT NULL,
     kolor varchar(16) NULL,
-    rocznik int NOT NULL,
+    rocznik int NOT NULL
 );
