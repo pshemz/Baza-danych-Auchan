@@ -4,7 +4,7 @@ CREATE TABLE PRACOWNICY (
     nazwisko varchar(30) NOT NULL,
     pesel varchar(11) NOT NULL,
     data_Wprowadzenia datetime NOT NULL,
-    magazynier bool NOT NULL,
+    magazynier bit NOT NULL,
     ilosc_godzin_tyg int NOT NULL,
     plec varchar(1) NOT NULL,
     wiek int NOT NULL
