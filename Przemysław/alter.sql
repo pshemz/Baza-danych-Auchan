@@ -1,0 +1,23 @@
+ALTER TABLE Dzialka
+ADD CONSTRAINT ID_adresu
+FOREIGN KEY (ID_adresu) REFERENCES Adres(ID_adresu);
+
+ALTER TABLE Dzialka
+ADD CONSTRAINT ID_lokalu
+FOREIGN KEY (ID_lokalu) REFERENCES Lokal(ID_lokalu);
+
+ALTER TABLE Lokalizacja
+ADD CONSTRAINT ID_adresu
+FOREIGN KEY (ID_adresu) REFERENCES Adres(ID_adresu);
+
+ALTER TABLE Parking
+ADD CONSTRAINT ID_lokalu
+FOREIGN KEY (ID_lokalu) REFERENCES Lokal(ID_lokalu);
+
+ALTER TABLE Parking
+ADD CONSTRAINT ID_adresu
+FOREIGN KEY (ID_adresu) REFERENCES Adres(ID_adresu);
+
+ALTER TABLE Dostawczaki
+ADD CONSTRAINT ID_dostawcy
+FOREIGN KEY (ID_dostawcy) REFERENCES Dostawcy(ID_dostawcy);
