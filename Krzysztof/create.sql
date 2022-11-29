@@ -1,8 +1,8 @@
 CREATE TABLE DOSTAWCY (
-    ID_dostawcy int NOT NULL PRIMARY KEY,
-    imie varchar(16) NOT NULL,
-  	wiek int NULL,
-    zaladunek int NOT NULL,
+	ID_dostawcy int NOT NULL PRIMARY KEY,
+	imie varchar(16) NOT NULL,
+	wiek int NULL,
+	zaladunek int NOT NULL,
 	czas_dostawy int NULL
 );
 
