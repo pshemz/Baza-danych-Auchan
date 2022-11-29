@@ -6,7 +6,7 @@ CREATE TABLE ADRES (
     numer_budynku int NOT NULL
 );
 
-CREATE TABLE DZIAŁKA (
+CREATE TABLE DZIALKA (
     ID_dzialki int NOT NULL PRIMARY KEY,
     powierzchnia varchar(16) NOT NULL,
     szerokosc varchar(16) NULL,
@@ -23,7 +23,7 @@ CREATE TABLE LOKALIZACJA (
 CREATE TABLE PARKING (
     ID_parkingu int NOT NULL PRIMARY KEY,
     ilosc_miejsc int NOT NULL,
-	ilosc_miejsc int NOT NULL,
+    ilosc_miejsc_inwalidzi int NOT NULL,
     parking_bezplatny bool NULL,
     firma_parkingowa varchar(16) NOT NULL
 );
