@@ -8,7 +8,7 @@ CREATE TABLE DOSTAWCY (
 
 CREATE TABLE DOSTAWY (
 	ID_dostawy int NOT NULL PRIMARY KEY,
-	ID_zamowienia int NOT NULL FOREIGN KEY,
+	ID_zamowienia int NOT NULL,
 	wartosc_dostawy int NOT NULL,
 	data_dostawy date NOT NULL,
 	kwota int NOT NULL
