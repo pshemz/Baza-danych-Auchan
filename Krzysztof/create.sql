@@ -33,6 +33,6 @@ CREATE TABLE DZIAL (
 	ID_dzialu int NOT NULL IDENTITY(1, 1) PRIMARY KEY,
 	nazwa_dzialu int NOT NULL,
 	przeznaczenie varchar(50) NOT NULL,
-	dzial_sklepowy bool NOT NULL,
-	dzial_magazynowy bool NOT NULL
+	dzial_sklepowy bit NOT NULL,
+	dzial_magazynowy bit NOT NULL
 );
