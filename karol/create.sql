@@ -23,13 +23,13 @@ CREATE TABLE PRODUKTY (
   typ_produktu varchar(50) NULL,
   przecenione bit NULL,
   opis_produktu text NULL,
-	wyprzedane bit NULL,
+  wyprzedane bit NULL,
 );
 
 CREATE TABLE FAKTURA_SPRZEDAŻY (
   ID_faktury int NOT NULL IDENTITY(1, 1) PRIMARY KEY,
   data_faktury date NULL,
-	forma_platnosci varchar(20) NULL,
+  forma_platnosci varchar(20) NULL,
 );
 
 CREATE TABLE ZAMOWIENIE (
@@ -37,6 +37,6 @@ CREATE TABLE ZAMOWIENIE (
   skompletowane bit NULL,
   oplacone bit NOT NULL,
   przyjete bit NULL,
-	data_dostawy date NULL,
-	cena int NOT NULL
+  data_dostawy date NULL,
+  cena int NOT NULL
 );
